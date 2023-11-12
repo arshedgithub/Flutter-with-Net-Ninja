@@ -17,9 +17,20 @@ class Home extends StatelessWidget {
       ),
 
       body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('hello World'),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Text('hello World'),
+              TextButton(
+                onPressed: (){},
+                child: Text('click'),
+              ),
+            ],
+          ),
           ElevatedButton(
             onPressed: (){}, 
             child: Text('click here'),
@@ -27,8 +38,8 @@ class Home extends StatelessWidget {
           Container(
             color: Colors.grey[300],
             child: Text('Hello'),
-            padding: EdgeInsets.all(20.0),
-            margin: EdgeInsets.all(10.0),
+            padding: EdgeInsets.all(12.0),
+            margin: EdgeInsets.all(8.0),
           ),
         ],
       ),
