@@ -17,7 +17,13 @@ class Home extends StatelessWidget {
       ),
 
       body: Center(
-        child: Image.asset('assets/bg_image.jpg'),
+        child: ElevatedButton.icon(
+          onPressed: (){}, 
+          icon: Icon(
+            Icons.email
+          ),
+          label: Text('Email us'),
+        ),
       ),
 
       floatingActionButton: FloatingActionButton(
