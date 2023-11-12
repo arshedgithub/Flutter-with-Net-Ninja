@@ -71,7 +71,15 @@ class Home extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image.asset('assets/bg_image.jpg')
+              ],
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
